@@ -74,17 +74,12 @@ public class Atv06 {
 			int k = sc.nextInt();
 			System.out.println("Quantidade de colunas:");
 			int l = sc.nextInt();
-			String m[][]= new String[k][l];
-			for(int i=0;i<k;i++) {
-				sc.nextLine();
-				for(int j=0;j<l;j++) {
-					m[i][j] =sc.nextLine();
-				}
-			}
+			System.out.println("Digite uma palavra");
+			String palavra = sc.nextLine();
 			for(int i=0;i<k;i++) {
 				System.out.println("");
 				for(int j=0;j<l;j++) {
-					System.out.print(m[i][j]+"|");
+					System.out.print(palavra+"|");
 				}
 			}
 			break;
