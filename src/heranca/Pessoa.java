@@ -19,8 +19,9 @@ public abstract class Pessoa {
 	public void setDataNascimento(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
-	public void mostrarAluno() {
-	}
-	public void mostrarProfessor(){
+	@Override
+	public String toString() {
+		return "\n"+this.getNome()+'\n'+
+				this.getDataNascimento()+'\n';
 	}
 }

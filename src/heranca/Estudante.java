@@ -20,10 +20,10 @@ public class Estudante extends Pessoa{
 	public void setCurso(String curso) {
 		this.curso = curso;
 	}
-	public void mostrarAluno() {
-		System.out.println(this.getNome());
-		System.out.println(this.getDataNascimento());
-		System.out.println(this.getRa());
-		System.out.println(this.getCurso());
+	@Override
+	public String toString() {
+		return 	super.toString()+
+				this.getRa()+'\n'+
+				this.getCurso();
 	}
 }

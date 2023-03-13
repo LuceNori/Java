@@ -20,11 +20,10 @@ public class Professor extends Pessoa{
 	public void setAreaCurso(String areaCurso) {
 		this.areaCurso = areaCurso;
 	}
-	public void mostrarProfessor() {
-		System.out.println("");
-		System.out.println(this.getNome());
-		System.out.println(this.getDataNascimento());
-		System.out.println(this.getSiape());
-		System.out.println(this.getAreaCurso());
+	@Override
+	public String toString() {
+		return 	super.toString()+
+				this.getSiape()+'\n'+
+				this.getAreaCurso();
 	}
 }
