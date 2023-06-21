@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane fx:controller="controllers.TelaCadastroController" xmlns:fx="http://javafx.com/fxml">
+	<center>
+	    <VBox spacing="10" alignment="CENTER">
+	    <Label text="Informe o tipo de carga:" />
+	    <TextField fx:id="tipoCargaTextField" />
+	
+	    <Label text="Informe a quantidade de vagões:" />
+	    <TextField fx:id="quantidadeVagoesTextField" />
+	
+	    <Button text="Cadastrar" onAction="#cadastrarTremCarga" />
+		</VBox>
+	</center>
+</BorderPane>
